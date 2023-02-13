@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Geneva, sans-serif;
+}
+
+:root {
+  --blue: #146ebe;
+  --red: #820032;
+}
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+button {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px solid #777;
+  background-color: #fff;
+}
+
+input,
+label,
+select {
+  padding-left: 5px;
+}
+
+.label-select {
+  width: 300px;
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-select select {
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid;
+  background-color: #fff;
+  border: 2px solid #777;
+}
+
+.label-select label {
+  height: 30px;
+  line-height: 30px;
+  width: 50%;
+}
+
+button {
+  background-color: #146ebe;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-delete {
+  width: 50px;
+  background-color: #fff;
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.btn-delete:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.btn-edit {
+  width: 50px;
+  background-color: #fff;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.btn-edit:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+i {
+  background-color: transparent;
+}
+
+h1 {
+  font-size: xx-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#profesionalsSection,
+#dataSection {
+  text-align: center;
+}
+
+table {
+  width: 800px;
+}
