@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>IMDB - Profesionales</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div class="container">
+      <h1 id="formTitle">Crear Profesional</h1>
+      <input id="id" type="hidden" value="undefined" />
+      <input id="name" type="text" placeholder="Nombre" />
+      <input id="age" type="number" placeholder="Edad" />
+      <input id="weight" type="number" placeholder="Peso" />
+      <input id="height" type="number" placeholder="Altura" />
+
+      <input id="nationality" type="text" placeholder="Nacionalidad" />
+      <input id="oscarNumber" type="number" placeholder="Numero de Oscar" />
+      <input id="profession" type="text" placeholder="Profesion" />
+      <div class="label-select">
+        <label for="isRetired">Situación laboral:</label>
+        <select id="isRetired">
+          <option value="true">Retirado</option>
+          <option value="false" selected>En activo</option>
+        </select>
+      </div>
+      <button id="sendButton" onclick="createOrUpdateProfesional()">
+        Crear
+      </button>
+      <input id="searchId" type="text" placeholder="ID de profesional" />
+      <button onclick="showTable()">Mostrar profesionales</button>
+      <section id="profesionalsSection"></section>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="module" src="./scripts/navbar.js"></script>
+    <script src="./scripts/profesional.js"></script>
+  </body>
+</html>
